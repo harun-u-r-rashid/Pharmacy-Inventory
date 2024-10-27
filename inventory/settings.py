@@ -14,7 +14,12 @@ from pathlib import Path
 import os
 
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "pharmacy-inventory-u6f9.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+
 CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOW_ALL_ORIGINS = True
