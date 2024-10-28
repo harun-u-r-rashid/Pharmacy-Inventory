@@ -9,7 +9,7 @@ class Product(models.Model):
     quantity = models.IntegerField(default=0)
 
     def __str__(self):
-        return f"{self.name}"
+        return f"{self.id}----{self.name}"
 
 
 class Purchase(models.Model):
@@ -17,17 +17,17 @@ class Purchase(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=0)
-    purchase_id = models.IntegerField(primary_key=True)
-
+    
     def __str__(self):
-        return f"{self.user}-----{self.product.name} ----- {self.quantity}"
+        return f"{self.id}----{self.user}-----{self.product.name} ----- {self.quantity}"
+
 
 
 class Sell(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=0)
-    sell_id = models.IntegerField(primary_key=True)
-
+ 
     def __str__(self):
-        return f"{self.user}-----{self.product.name} ----- {self.quantity}"
+        return f"{self.id}---{self.user}-----{self.product.name} ----- {self.quantity}"
+

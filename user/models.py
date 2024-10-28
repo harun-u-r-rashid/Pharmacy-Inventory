@@ -48,7 +48,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     is_admin = models.BooleanField(default=False)
     is_superadmin = models.BooleanField(default=False)
-
     otp = models.CharField(max_length=100, null=True, blank=True)
     refresh_token = models.CharField(max_length=1000, null=True, blank=True)
 
@@ -58,7 +57,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = AccountManager()
 
     def __str__(self):
-        return f"{self.email}----{self.username}----{self.is_staff}"
+        return f"{self.id}----{self.email}----{self.username}----{self.is_staff}"
     
     def tokens(self):
         refresh = RefreshToken.for_user(self)
