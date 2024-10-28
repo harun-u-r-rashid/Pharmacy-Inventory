@@ -14,17 +14,12 @@ from pathlib import Path
 import os
 
 
-ALLOWED_HOSTS = [
-    "pharmacy-inventory-pm8z.onrender.com",
-    "localhost",
-    "127.0.0.1",
-    "[::1]"  # This can help with IPv6 loopback addresses
-]
+ALLOWED_HOSTS = ["*"]
 
 CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://pharmacy-inventory-pm8z.onrender.com",
+    "https://inventory-pm8z.onrender.com",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
@@ -35,7 +30,7 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:5173",
     "http://127.0.0.1:8000",
-    "https://pharmacy-inventory-pm8z.onrender.com",
+    "https://inventory-pm8z.onrender.com",
 ]
 
 
