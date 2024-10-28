@@ -18,17 +18,17 @@ ALLOWED_HOSTS = [
     "pharmacy-inventory-pm8z.onrender.com",
     "localhost",
     "127.0.0.1",
+    "[::1]"  # This can help with IPv6 loopback addresses
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
+
 CORS_ALLOWED_ORIGINS = [
     "https://pharmacy-inventory-pm8z.onrender.com",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
-
-
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
