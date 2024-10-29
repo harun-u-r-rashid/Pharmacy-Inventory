@@ -17,21 +17,21 @@ ALLOWED_HOSTS = ["*"]
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-CORS_ALLOWED_ORIGINS = [
-    "https://ae72142c-ea47-480f-9a4e-4e02e44fb40e-dev.e1-us-east-azure.choreoapis.dev/djangoinventory/backend/v1.0",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "https://inventory-pm8z.onrender.com",
+# ]
 
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
-CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:3000",
-    "http://localhost:8000",
-    "http://127.0.0.1:5173",
-    "http://127.0.0.1:8000",
-    "https://ae72142c-ea47-480f-9a4e-4e02e44fb40e-dev.e1-us-east-azure.choreoapis.dev/djangoinventory/backend/v1.0",
-]
+# CSRF_TRUSTED_ORIGINS = [
+#     "http://localhost:3000",
+#     "http://localhost:8000",
+#     "http://127.0.0.1:5173",
+#     "http://127.0.0.1:8000",
+#     "https://inventory-pm8z.onrender.com",
+# ]
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
