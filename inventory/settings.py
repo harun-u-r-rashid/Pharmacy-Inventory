@@ -18,18 +18,18 @@ ALLOWED_HOSTS = ["*"]
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-# CORS_ALLOWED_ORIGINS = [
-#     # "https://inventory-django-d9lv.onrender.com",
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "https://inventory-django-d9lv.onrender.com",
+]
 
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
-# CSRF_TRUSTED_ORIGINS = [
-#     "http://localhost:8000",
-#     # "https://inventory-django-d9lv.onrender.com",
-# ]
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:8000",
+    "https://inventory-django-d9lv.onrender.com",
+]
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -45,7 +45,6 @@ SECRET_KEY = "django-insecure-ens$s3%@mojl8(^l(lbk*yi9a%5=234@&6a=mg85vxq!2t@8zj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
 
 # Application definition
