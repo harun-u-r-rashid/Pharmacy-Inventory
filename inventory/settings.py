@@ -17,21 +17,26 @@ ALLOWED_HOSTS = ["*"]
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-# CORS_ALLOWED_ORIGINS = [
-#     "https://inventory-pm8z.onrender.com",
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "https://inventory-django.onrender.com",
+]
+import logging
+logging.basicConfig(level=logging.DEBUG)
+logging.debug("ALLOWED_HOSTS: %s", ALLOWED_HOSTS)
 
+
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "localhost").split(",")
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
-# CSRF_TRUSTED_ORIGINS = [
-#     "http://localhost:3000",
-#     "http://localhost:8000",
-#     "http://127.0.0.1:5173",
-#     "http://127.0.0.1:8000",
-#     "https://inventory-pm8z.onrender.com",
-# ]
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000",
+    "http://localhost:8000",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:8000",
+    "https://inventory-django.onrender.com",
+]
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
