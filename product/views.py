@@ -1,10 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render # type: ignore
 from .models import Product, Purchase, Sell
-from rest_framework import generics
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework.exceptions import PermissionDenied
+from rest_framework import generics # type: ignore
+from rest_framework.permissions import IsAuthenticated # type: ignore
+from rest_framework.response import Response # type: ignore
+from rest_framework import status # type: ignore
+from rest_framework.exceptions import PermissionDenied # type: ignore
 
 from user.models import User
 
