@@ -13,27 +13,23 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 
-# ALLOWED_HOSTS = ["*"]
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "localhost").split(",")
+ALLOWED_HOSTS = ["*"]
 
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-CORS_ALLOWED_ORIGINS = [
-    "https://inventory-django-d9lv.onrender.com",
-]
-import logging
-logging.basicConfig(level=logging.DEBUG)
-logging.debug("ALLOWED_HOSTS: %s", ALLOWED_HOSTS)
+# CORS_ALLOWED_ORIGINS = [
+#     # "https://inventory-django-d9lv.onrender.com",
+# ]
 
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
-CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:8000",
-    "https://inventory-django-d9lv.onrender.com",
-]
+# CSRF_TRUSTED_ORIGINS = [
+#     "http://localhost:8000",
+#     # "https://inventory-django-d9lv.onrender.com",
+# ]
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
